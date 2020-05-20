@@ -1,0 +1,87 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="100dp">
+
+    <androidx.cardview.widget.CardView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:elevation="20dp"
+        app:cardCornerRadius="20dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:layout_width="match_parent"
+            android:layout_height="90dp">
+
+
+            <androidx.constraintlayout.widget.Guideline
+                android:id="@+id/guideliner1"
+                android:layout_width="wrap_content"
+                android:layout_height="0dp"
+                android:orientation="vertical"
+                app:layout_constraintGuide_percent="0.046" />
+
+            <androidx.constraintlayout.widget.Guideline
+                android:id="@+id/guideliner2"
+                android:layout_width="wrap_content"
+                android:layout_height="0dp"
+                android:orientation="horizontal"
+                app:layout_constraintGuide_percent="0.079" />
+
+            <androidx.constraintlayout.widget.Guideline
+                android:id="@+id/guideliner3"
+                android:layout_width="wrap_content"
+                android:layout_height="0dp"
+                android:orientation="horizontal"
+                app:layout_constraintGuide_percent="0.89" />
+
+            <androidx.constraintlayout.widget.Guideline
+                android:id="@+id/guideliner4"
+                android:layout_width="wrap_content"
+                android:layout_height="0dp"
+                android:orientation="vertical"
+                app:layout_constraintGuide_percent="0.964" />
+
+            <TextView
+                android:id="@+id/item_music_title"
+                android:layout_width="wrap_content"
+                android:font="@font/nbg"
+                android:layout_height="wrap_content"
+                android:lineSpacingExtra="7sp"
+                android:textColor="#4010c9"
+                android:textSize="23sp"
+                android:textStyle="bold"
+                app:layout_constraintStart_toStartOf="@+id/guideliner1"
+                app:layout_constraintTop_toTopOf="@+id/guideliner2"
+                tools:text="접근금지" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:lineSpacingExtra="4.5sp"
+                android:textColor="#4010c9"
+                android:textSize="17sp"
+                android:font="@font/nbg"
+                app:layout_constraintBottom_toTopOf="@+id/guideliner3"
+                app:layout_constraintStart_toStartOf="@+id/guideliner1"
+                tools:text="펜타곤" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:lineSpacingExtra="4sp"
+                android:textColor="#4010c9"
+                android:font="@font/nbg"
+                android:textSize="17sp"
+                android:textStyle="bold"
+                app:layout_constraintBottom_toTopOf="@+id/guideliner3"
+                app:layout_constraintEnd_toStartOf="@+id/guideliner4"
+                tools:text="신청자" />
+        </androidx.constraintlayout.widget.ConstraintLayout>
+    </androidx.cardview.widget.CardView>
+</androidx.constraintlayout.widget.ConstraintLayout>
