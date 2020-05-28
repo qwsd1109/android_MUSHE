@@ -5,7 +5,7 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:background="#f7f7f7"
-    tools:context=".SignUpActivity">
+    tools:context=".activity.SignUpActivity">
 
     <androidx.constraintlayout.widget.Guideline
         android:id="@+id/guideliner1"
@@ -55,7 +55,7 @@
         android:layout_width="wrap_content"
         android:layout_height="0dp"
         android:orientation="horizontal"
-        app:layout_constraintGuide_percent="0.284" />
+        app:layout_constraintGuide_percent="0.26" />
 
     <androidx.constraintlayout.widget.Guideline
         android:id="@+id/guideliner5"
@@ -65,12 +65,10 @@
         app:layout_constraintGuide_percent="0.205" />
 
 
-
     <com.google.android.material.textfield.TextInputLayout
-        android:id="@+id/sigin_id"
+        android:id="@+id/signin_id"
         android:layout_width="0dp"
         android:layout_height="wrap_content"
-        app:counterEnabled="true"
         app:counterMaxLength="20"
         app:errorEnabled="true"
         app:layout_constraintEnd_toStartOf="@+id/guideliner2"
@@ -85,12 +83,12 @@
             android:layout_marginBottom="3dp"
             android:gravity="center_vertical"
             android:hint="ID"
-            android:inputType="textPassword"
-            android:maxLength="20"
+            android:inputType="text"
             android:maxLines="1"
             android:padding="5dp"
             android:textSize="15sp" />
     </com.google.android.material.textfield.TextInputLayout>
+
 
     <androidx.constraintlayout.widget.Guideline
         android:id="@+id/guideliner7"
@@ -98,16 +96,28 @@
         android:layout_height="0dp"
         android:orientation="horizontal"
         app:layout_constraintGuide_percent="0.344" />
+
+
+    <androidx.constraintlayout.widget.Guideline
+        android:id="@+id/guideliner8"
+        android:layout_width="wrap_content"
+        android:layout_height="0dp"
+        android:orientation="horizontal"
+        app:layout_constraintGuide_percent="0.447" />
+
+    오전 10:10
+
+
+
     <com.google.android.material.textfield.TextInputLayout
-        android:id="@+id/sigin_password"
+        android:id="@+id/signin_password"
         android:layout_width="0dp"
         android:layout_height="wrap_content"
         app:errorEnabled="true"
         app:layout_constraintEnd_toStartOf="@+id/guideliner2"
         app:layout_constraintHorizontal_bias="0.0"
         app:layout_constraintStart_toStartOf="@+id/guideliner1"
-        app:layout_constraintTop_toTopOf="@+id/guideliner8"
-        app:passwordToggleEnabled="true">
+        app:layout_constraintTop_toTopOf="@+id/guideliner8">
 
         <com.google.android.material.textfield.TextInputEditText
             android:id="@+id/signin_edit_password"
@@ -122,21 +132,12 @@
             android:textSize="15sp" />
     </com.google.android.material.textfield.TextInputLayout>
 
-    <androidx.constraintlayout.widget.Guideline
-        android:id="@+id/guideliner8"
-        android:layout_width="wrap_content"
-        android:layout_height="0dp"
-        android:orientation="horizontal"
-        app:layout_constraintGuide_percent="0.447" />
-
-
-
     <Button
-        android:id="@+id/button"
+        android:id="@+id/Signinbutton"
         android:layout_width="0dp"
         android:layout_height="0dp"
         android:background="@drawable/btn_2"
-        android:text="회원가입"
+        android:text="로그인"
         android:font="@font/nbg"
         android:textColor="#ffffff"
         android:textSize="30sp"
@@ -196,5 +197,5 @@
         android:layout_width="wrap_content"
         android:layout_height="0dp"
         android:orientation="horizontal"
-        app:layout_constraintGuide_percent="0.791" />
+        app:layout_constraintGuide_percent="0.81" />
 </androidx.constraintlayout.widget.ConstraintLayout>

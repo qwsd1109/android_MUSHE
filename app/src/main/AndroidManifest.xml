@@ -11,7 +11,7 @@
         android:theme="@style/AppTheme">
 
 
-        <activity android:name=".SplashActivity"
+        <activity android:name=".activity.SplashActivity"
             android:windowSoftInputMode="adjustNothing">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
@@ -20,17 +20,17 @@
             </intent-filter>
         </activity>
 
-        <activity android:name=".ExplanationActivity"
+        <activity android:name=".activity.ExplanationActivity"
             android:windowSoftInputMode="adjustNothing"></activity>
-        <activity android:name=".SelectActivity"
+        <activity android:name=".activity.SelectActivity"
             android:windowSoftInputMode="adjustNothing"/>
-        <activity android:name=".SignInActivity"
+        <activity android:name=".activity.SignInActivity"
             android:windowSoftInputMode="adjustNothing" />
-        <activity android:name=".SignUpActivity"
+        <activity android:name=".activity.SignUpActivity"
             android:windowSoftInputMode="adjustNothing"/>
-        <activity android:name=".SearchActivity"
+        <activity android:name=".activity.SearchActivity"
             android:windowSoftInputMode="adjustNothing" />
-        <activity android:name=".MainActivity"
+        <activity android:name=".activity.MainActivity"
             android:windowSoftInputMode="adjustNothing">
         </activity>
     </application>

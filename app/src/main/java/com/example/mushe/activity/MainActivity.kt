@@ -1,7 +1,8 @@
-package com.example.mushe
+package com.example.mushe.activity
 
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
+import com.example.mushe.R
 
 class MainActivity : AppCompatActivity() {
 

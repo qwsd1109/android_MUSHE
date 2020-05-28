@@ -1,9 +1,10 @@
-package com.example.mushe
+package com.example.mushe.activity
 
 import android.content.Intent
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
 import android.os.Handler
+import com.example.mushe.R
 
 class SplashActivity : AppCompatActivity() {
 
@@ -14,7 +15,8 @@ class SplashActivity : AppCompatActivity() {
         setContentView(R.layout.activity_splash)
 
         Handler().postDelayed({
-            startActivity(Intent(this,ExplanationActivity::class.java))
+            startActivity(Intent(this,
+                ExplanationActivity::class.java))
             finish()
         },SPlASH_TIME_OUT)
     }
