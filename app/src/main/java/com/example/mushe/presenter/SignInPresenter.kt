@@ -8,7 +8,7 @@ class SignInPresenter (private val view:SignInContract.View): SignInContract.Pre
     fun checkCount(pw : String, id : String){
         when {
             id != null -> {
-                if(1<pw.length && pw.length <20){
+                if(1<pw.length && pw.length <30){
                     //서버연동
                 }else if(pw.length == null){
                     view.checkLetterCount("비밀번호를 입력해주시길 바랍니다.")
