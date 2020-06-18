@@ -61,6 +61,7 @@
                 tools:text="접근금지" />
 
             <TextView
+                android:id="@+id/item_music_singer"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:lineSpacingExtra="4.5sp"
@@ -72,6 +73,7 @@
                 tools:text="펜타곤" />
 
             <TextView
+                android:id="@+id/item_music"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:lineSpacingExtra="4sp"
